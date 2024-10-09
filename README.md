@@ -11,23 +11,42 @@ Get started in just a few steps. Clone, run, and customize as you like!
    cd your-repo-name
    ```
 
-2. **Run Development Server**:
-   Make sure you have `make` installed. Then run:
+2. **Install Dependencies**:
+   Run the following command to install Go dependencies:
+
+   ```bash
+   go mod tidy
+   ```
+
+3. **Install Templ LSP**:
+   To enable templating features, install the Templ Language Server Protocol (LSP) with:
+
+   ```bash
+   go install github.com/a-h/templ/cmd/templ@latest
+   ```
+
+4. **Run Development Server**:
+   Start the development server with:
 
    ```bash
    make dev
    ```
 
-3. **Open in Browser**:
+5. **Open in Browser**:
    Navigate to [http://localhost:7331](http://localhost:7331) to view the project.
 
-4. **Customize & Experiment**:
+6. **Customize & Experiment**:
    Feel free to modify the code, experiment with changes, and create something awesome. Break it, fix it, and make it your own!
 
 ## Requirements
 
-- Make sure you have `make` installed on your system.
-- Additional dependencies may be required based on your environment. Check the project files for any specific setup instructions.
+- [Go](https://golang.org/dl/) for Go package management.
+- [Templ](https://templ.guide/) for templating. Make sure the Templ LSP is installed with:
+  ```bash
+  go install github.com/a-h/templ/cmd/templ@latest
+  ```
+- `make` for running development commands.
+- [Node.js and npm](https://nodejs.org/) for using `npx` with Tailwind CSS commands.
 
 ## License
 
