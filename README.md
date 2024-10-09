@@ -7,8 +7,8 @@ Get started in just a few steps. Clone, run, and customize as you like!
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/axzilla/goilerplate-quickstart.git
+   cd goilerplate-quickstart
    ```
 
 2. **Install Dependencies**:
