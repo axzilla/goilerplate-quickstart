@@ -1,0 +1,14 @@
+package pages
+
+import (
+	"github.com/axzilla/goilerplate-test/ui/layouts"
+	"github.com/axzilla/goilerplate/pkg/components"
+)
+
+templ Landing() {
+	@layouts.BaseLayout() {
+		<div class="flex gap-2 h-screen items-center justify-center">
+			@components.Button(components.ButtonProps{Text: "Hey Dude", Attributes: templ.Attributes{"@click": "alert('Hey Dude!')"}})
+		</div>
+	}
+}

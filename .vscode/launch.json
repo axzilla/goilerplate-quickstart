@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Go Server",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "${workspaceFolder}/cmd/server",
+      "args": ["serve", "--dir", "./pb_data"],
+      "env": {},
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
