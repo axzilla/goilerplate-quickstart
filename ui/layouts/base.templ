@@ -1,0 +1,23 @@
+package layouts
+
+import "github.com/axzilla/goilerplate/pkg/utils"
+
+templ BaseLayout() {
+	<!DOCTYPE html>
+	<html lang="en" class="h-full dark">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<!-- Tailwind CSS (output) -->
+			<link href="/assets/css/output.css" rel="stylesheet"/>
+			<!-- Alpine.js -->
+			@utils.AlpineJS()
+			<!-- Goilerplate CSS -->
+			@utils.CSS("dev")
+		</head>
+		// x-data is a global Alpine.js directive and needs to be placed on the body element.
+		<body x-data>
+			{ children... }
+		</body>
+	</html>
+}

@@ -1,0 +1,14 @@
+github.com/a-h/templ v0.2.778 h1:VzhOuvWECrwOec4790lcLlZpP4Iptt5Q4K9aFxQmtaM=
+github.com/a-h/templ v0.2.778/go.mod h1:lq48JXoUvuQrU0VThrK31yFwdRjTCnIE5bcPCM9IP1w=
+github.com/axzilla/goilerplate v0.0.0-20241009144844-5e17c1b43778 h1:6UeFSAbzXzZY51xzVP3Sdms6Lcuyk7Nb0oeR5pYwNMo=
+github.com/axzilla/goilerplate v0.0.0-20241009144844-5e17c1b43778/go.mod h1:TG/79+6wky48NHkEP5+nVjQYnyblQDs5kgG7W78fDJY=
+github.com/axzilla/goilerplate v0.0.0-20241009151238-15742c20d062 h1:CiEJWCAhyXwfO8QPlkE4cHKI8SOoKWsaggti6BuCS08=
+github.com/axzilla/goilerplate v0.0.0-20241009151238-15742c20d062/go.mod h1:TG/79+6wky48NHkEP5+nVjQYnyblQDs5kgG7W78fDJY=
+github.com/axzilla/goilerplate v0.0.0-20241009160826-e701ec3aa0c0 h1:MUtUCDWpwmTyq4DvkYuchwHfiWv5Ip6eQMgki2LWmTQ=
+github.com/axzilla/goilerplate v0.0.0-20241009160826-e701ec3aa0c0/go.mod h1:TG/79+6wky48NHkEP5+nVjQYnyblQDs5kgG7W78fDJY=
+github.com/axzilla/goilerplate v0.0.0-20241009161250-c03b1c886d95 h1:lh7ARsiq9f9Ve7dWsGTp34L+LuIg3nRZeWj0+DBTEB4=
+github.com/axzilla/goilerplate v0.0.0-20241009161250-c03b1c886d95/go.mod h1:TG/79+6wky48NHkEP5+nVjQYnyblQDs5kgG7W78fDJY=
+github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
+github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
+github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
+github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
