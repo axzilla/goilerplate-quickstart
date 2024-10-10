@@ -8,7 +8,13 @@ import (
 templ Landing() {
 	@layouts.BaseLayout() {
 		<div class="flex gap-2 h-screen items-center justify-center">
-			@components.Button(components.ButtonProps{Text: "Hey Dude", Attributes: templ.Attributes{"@click": "alert('Hey Dude!')"}})
+			@components.Button(components.ButtonProps{
+				Class:      "flex gap-2",
+				Attributes: templ.Attributes{"@click": "alert('Hey Dude!')"},
+			}) {
+				@components.Icon(components.IconProps{Name: "heart"})
+				Click Me
+			}
 		</div>
 	}
 }
