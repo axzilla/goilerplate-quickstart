@@ -1,4 +1,4 @@
-module github.com/axzilla/goilerplate-test
+module github.com/axzilla/goilerplate-quickstart
 
 go 1.22.4
 
@@ -7,4 +7,4 @@ require (
 	github.com/joho/godotenv v1.5.1
 )
 
-require github.com/axzilla/goilerplate v0.20.1
+require github.com/axzilla/goilerplate v0.20.3
