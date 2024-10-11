@@ -1,8 +1,9 @@
 package pages
 
 import (
-	"github.com/axzilla/goilerplate-test/ui/layouts"
+	"github.com/axzilla/goilerplate-quickstart/ui/layouts"
 	"github.com/axzilla/goilerplate/pkg/components"
+	"github.com/axzilla/goilerplate/pkg/icons"
 )
 
 templ Landing() {
@@ -12,7 +13,7 @@ templ Landing() {
 				Class:      "flex gap-2",
 				Attributes: templ.Attributes{"@click": "alert('Hey Dude!')"},
 			}) {
-				@components.Icon(components.IconProps{Name: "heart"})
+				@icons.Heart(icons.IconProps{})
 				Click Me
 			}
 		</div>
