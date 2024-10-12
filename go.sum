@@ -1,7 +1,7 @@
 github.com/a-h/templ v0.2.778 h1:VzhOuvWECrwOec4790lcLlZpP4Iptt5Q4K9aFxQmtaM=
 github.com/a-h/templ v0.2.778/go.mod h1:lq48JXoUvuQrU0VThrK31yFwdRjTCnIE5bcPCM9IP1w=
-github.com/axzilla/goilerplate v0.20.5 h1:8A9TO5CDa64Vvu4HiiqUnYLq/YZntyuvhwyKHT5MGQs=
-github.com/axzilla/goilerplate v0.20.5/go.mod h1:TG/79+6wky48NHkEP5+nVjQYnyblQDs5kgG7W78fDJY=
+github.com/axzilla/goilerplate v0.20.6 h1:+L/Roi3uk0j6H7vTiM7FV9PwdccaLs/xwOGfrQaM1d0=
+github.com/axzilla/goilerplate v0.20.6/go.mod h1:TG/79+6wky48NHkEP5+nVjQYnyblQDs5kgG7W78fDJY=
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
 github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
