@@ -7,4 +7,4 @@ require (
 	github.com/joho/godotenv v1.5.1
 )
 
-require github.com/axzilla/goilerplate v0.20.3
+require github.com/axzilla/goilerplate v0.20.4
