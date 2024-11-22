@@ -2,8 +2,8 @@ github.com/Oudwins/tailwind-merge-go v0.2.0 h1:rtVHgYmLwwae4P+K6//ceRuUdyz3Bny6f
 github.com/Oudwins/tailwind-merge-go v0.2.0/go.mod h1:kkZodgOPvZQ8f7SIrlWkG/w1g9JTbtnptnePIh3V72U=
 github.com/a-h/templ v0.2.778 h1:VzhOuvWECrwOec4790lcLlZpP4Iptt5Q4K9aFxQmtaM=
 github.com/a-h/templ v0.2.778/go.mod h1:lq48JXoUvuQrU0VThrK31yFwdRjTCnIE5bcPCM9IP1w=
-github.com/axzilla/goilerplate v0.21.1 h1:tiScNP2w+X1Uo5CgO0Fi9LWccCs7e2MtMKXkvuoKA2I=
-github.com/axzilla/goilerplate v0.21.1/go.mod h1:8g8PQBQFBN4VtKSN4rnuydiGM0elU8m+/beZX75a94Y=
+github.com/axzilla/goilerplate v0.22.0 h1:tZqKBfsdKJ4hWyDJEwu7M4gZM0OgyTwMI+sHko/ZfPQ=
+github.com/axzilla/goilerplate v0.22.0/go.mod h1:8g8PQBQFBN4VtKSN4rnuydiGM0elU8m+/beZX75a94Y=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
