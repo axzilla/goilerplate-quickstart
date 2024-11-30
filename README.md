@@ -75,7 +75,7 @@ Refer to the [Goilerplate documentation](https://github.com/axzilla/goilerplate)
 ## Troubleshooting
 
 - If Templ files are not updating, ensure the Templ CLI is installed and run `templ generate` manually.
-- For Tailwind CSS issues, check that the `input.css` file is correctly linked in your HTML.
+- For Tailwind CSS issues, check that the `output.css` file is correctly linked in your HTML.
 
 ## Contributing
 
