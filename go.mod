@@ -7,6 +7,6 @@ require (
 	github.com/joho/godotenv v1.5.1
 )
 
-require github.com/axzilla/goilerplate v0.22.2-0.20241129095453-08eba291ff4b
+require github.com/axzilla/goilerplate v0.22.1
 
 require github.com/Oudwins/tailwind-merge-go v0.2.0 // indirect

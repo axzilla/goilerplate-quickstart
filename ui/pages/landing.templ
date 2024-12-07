@@ -10,12 +10,10 @@ templ Landing() {
 	@layouts.BaseLayout() {
 		<div class="flex gap-2 h-screen items-center justify-center">
 			@components.Button(components.ButtonProps{
-				Class:      "flex gap-2 bg-pink-200",
+				IconLeft:   icons.Heart(icons.IconProps{}),
+				Text:       "Click Me!",
 				Attributes: templ.Attributes{"@click": "alert('Hey Dude!')"},
-			}) {
-				@icons.Heart(icons.IconProps{})
-				Click Me
-			}
+			})
 		</div>
 	}
 }
