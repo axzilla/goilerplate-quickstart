@@ -1,16 +1,75 @@
-# Goilerplate Quickstart - Jump Start Your Go & Templ UI Project
+# Goilerplate Quickstart
 
-This repository provides a quickstart template for projects using Goilerplate, a modern UI component library for Go and Templ. Get a head start on your project with a pre-configured environment and example setup.
+Get started with Goilerplate, a modern UI component library for Go and Templ. This template provides a pre-configured setup for building web applications with Goilerplate components.
+
+## Features
+
+- ✨ Pre-configured Goilerplate components
+- 🎨 Ready-to-use theme and styling
+- 🚀 Development server with hot reload
+- 🛠️ Example components and layouts
+- 📱 Responsive by default
+- 🌙 Light and dark mode support
 
 ## Prerequisites
 
-Ensure you have the following installed:
+Before starting, ensure you have these tools installed:
 
-- [Go](https://golang.org/dl/) (latest version recommended)
-- [Node.js and npm](https://nodejs.org/) (for running npx with Tailwind CSS)
-- `make` (usually pre-installed on macOS and Linux; Windows users might need to install it separately)
+1. **Go** (1.20 or later)
 
-## Quick Setup
+   ```bash
+   # Verify installation
+   go version
+
+   # Install from https://golang.org/dl/
+   ```
+
+2. **Templ**
+
+   ```bash
+   # Install
+   go install github.com/a-h/templ/cmd/templ@latest
+
+   # Verify installation
+   templ version
+   ```
+
+3. **Tailwind CSS CLI** (Standalone)
+
+   ```bash
+   # Choose one installation method:
+
+   # macOS (Homebrew)
+   brew install tailwindcss
+
+   # macOS (Apple Silicon)
+   curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-arm64
+   chmod +x tailwindcss-macos-arm64
+   sudo mv tailwindcss-macos-arm64 /usr/local/bin/tailwindcss
+
+   # macOS (Intel)
+   curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-x64
+   chmod +x tailwindcss-macos-x64
+   sudo mv tailwindcss-macos-x64 /usr/local/bin/tailwindcss
+
+   # Linux (x64)
+   curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-x64
+   chmod +x tailwindcss-linux-x64
+   sudo mv tailwindcss-linux-x64 /usr/local/bin/tailwindcss
+
+   # Windows (x64)
+   # Download from: https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-windows-x64.exe
+   # Add to your PATH as 'tailwindcss'
+
+   # Verify installation
+   tailwindcss --help
+   ```
+
+4. **Make** (for development scripts)
+   - Pre-installed on macOS and Linux
+   - Windows users might need to install it separately
+
+## Setup
 
 1. **Clone the Repository**
 
@@ -19,72 +78,107 @@ Ensure you have the following installed:
    cd goilerplate-quickstart
    ```
 
-2. **Install Go Dependencies**
+2. **Install Dependencies**
 
    ```bash
    go mod tidy
    ```
 
-3. **Install Templ**
+3. **Configure Tailwind**
+   Since we're using Goilerplate as a package, you need to configure Tailwind to process its components:
+
+   a. Get your Go path:
 
    ```bash
-   go install github.com/a-h/templ/cmd/templ@latest
+   go env GOPATH
    ```
 
-4. **Start the Development Server**
+   b. Add the path to your `tailwind.config.js` content array:
+
+   ```js
+   content: [
+     "./**/*.{html,templ,go}",
+     "${GOPATH}/pkg/mod/github.com/axzilla/goilerplate@*/**/*.{go,templ}", // Replace ${GOPATH} with your actual Go path
+   ];
+   ```
+
+4. **Start Development Server**
 
    ```bash
    make dev
    ```
 
-   This command will use npx to run Tailwind CSS, so no separate npm install is needed.
+   Your application will be running at [http://localhost:7331](http://localhost:7331)
 
-5. **View Your Project**
-   Open your browser and navigate to [http://localhost:7331](http://localhost:7331)
+## Project Structure
 
-## Development Workflow
+```
+.
+├── assets/
+│   └── css/
+│       ├── input.css    # Tailwind imports and custom styles
+│       └── output.css   # Generated CSS (don't edit)
+├── ui/
+│   ├── components/      # Your custom components
+│   ├── layouts/         # Page layouts
+│   └── pages/          # Page templates
+├── main.go             # Application entry point
+├── Makefile           # Development commands
+└── tailwind.config.js # Tailwind configuration
+```
 
-- The `make dev` command starts a development server with hot-reloading for Go, Templ, and Tailwind CSS.
-- Edit files in the `ui` directory to modify layouts and pages.
-- Tailwind CSS styles can be adjusted in `assets/css/input.css`.
-- The main application logic is in `main.go`.
+## Development Commands
+
+- `make dev` - Start development server with hot reload (Templ, Tailwind, and Go)
+- `make build` - Build for production
+- `make clean` - Clean build artifacts
 
 ## Customization
 
-- Add new pages in `ui/pages/` and new layouts in `ui/layouts/`.
-- Modify Tailwind configuration in `tailwind.config.js`.
-- Extend the `Makefile` for additional build processes if needed.
+1. **Add New Pages**
 
-## Using Goilerplate Components
+   - Create new templates in `ui/pages/`
+   - Add routes in `main.go`
 
-This quickstart is pre-configured to use Goilerplate. To use Goilerplate components:
+2. **Create Layouts**
 
-1. Import Goilerplate in your Templ files:
+   - Add layout templates in `ui/layouts/`
+   - Use them in your pages with `@layouts.YourLayout()`
 
-   ```go
-   import "github.com/axzilla/goilerplate/pkg/components"
-   ```
+3. **Modify Styles**
 
-2. Use components in your Templ templates:
-   ```go
-   @components.Button(components.ButtonProps{Text: "Click me"})
-   ```
+   - Edit `assets/css/input.css` for custom styles
+   - Configure theme in `tailwind.config.js`
 
-Refer to the [Goilerplate documentation](https://github.com/axzilla/goilerplate) for a full list of available components and their usage.
+4. **Add Components**
+
+   - Create new components in `ui/components/`
+   - Import existing Goilerplate components:
+
+     ```go
+     import "github.com/axzilla/goilerplate/pkg/components"
+
+     // Use in templates
+     @components.Button(components.ButtonProps{Text: "Click me"})
+     ```
 
 ## Troubleshooting
 
-- If Templ files are not updating, ensure the Templ CLI is installed and run `templ generate` manually.
-- For Tailwind CSS issues, check that the `output.css` file is correctly linked in your HTML.
+- **Styles not updating?** Make sure Tailwind is watching for changes and your GOPATH is correctly configured
+- **Components not found?** Run `go mod tidy` to ensure all dependencies are installed
+- **Build errors?** Run `make clean` and try again
+- **Other issues?** Check our [documentation](https://goilerplate.com/docs/how-to-use) or [open an issue](https://github.com/axzilla/goilerplate-quickstart/issues)
+
+## Learn More
+
+- [Goilerplate Documentation](https://goilerplate.com/docs/how-to-use)
+- [Available Components](https://goilerplate.com/docs/components)
+- [Theme Customization](https://goilerplate.com/docs/themes)
 
 ## Contributing
 
-Contributions to improve this quickstart template are welcome. Please feel free to submit issues or pull requests.
+Issues and pull requests are welcome! Please read our [contributing guidelines](https://github.com/axzilla/goilerplate/blob/main/CONTRIBUTING.md) before submitting a pull request.
 
 ## License
 
-This quickstart project is open-source and available under the [MIT License](LICENSE).
-
----
-
-Happy coding with Goilerplate! We're excited to see what you build. If you create something cool, consider sharing it with the community!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
