@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"net/http"
 	"os"
-	"path/filepath"
 
 	"github.com/a-h/templ"
 	"github.com/axzilla/goilerplate-quickstart/assets"
@@ -31,28 +30,7 @@ func InitDotEnv() {
 func SetupAssetsRoutes(mux *http.ServeMux) {
 	var isDevelopment = os.Getenv("GO_ENV") != "production"
 
-	mimeTypes := map[string]string{
-		".css":   "text/css; charset=utf-8",
-		".js":    "application/javascript; charset=utf-8",
-		".svg":   "image/svg+xml",
-		".html":  "text/html; charset=utf-8",
-		".jpg":   "image/jpeg",
-		".jpeg":  "image/jpeg",
-		".png":   "image/png",
-		".gif":   "image/gif",
-		".woff":  "font/woff",
-		".woff2": "font/woff2",
-		".ttf":   "font/ttf",
-		".ico":   "image/x-icon",
-	}
-
 	assetHandler := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		ext := filepath.Ext(r.URL.Path)
-
-		if mimeType, ok := mimeTypes[ext]; ok {
-			w.Header().Set("Content-Type", mimeType)
-		}
-
 		if isDevelopment {
 			w.Header().Set("Cache-Control", "no-store")
 		}
