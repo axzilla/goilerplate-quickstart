@@ -1,10 +1,10 @@
-# Goilerplate Quickstart
+# templUI Quickstart
 
-Get started with Goilerplate, a modern UI component library for Go and Templ. This template provides a pre-configured setup for building web applications with Goilerplate components.
+Get started with templUI, a modern UI component library for Go and Templ. This template provides a pre-configured setup for building web applications with templUI components.
 
 ## Features
 
-- ✨ Pre-configured Goilerplate components
+- ✨ Pre-configured templUI components
 - 🎨 Ready-to-use theme and styling
 - 🚀 Development server with hot reload
 - 🛠️ Example components and layouts
@@ -20,15 +20,15 @@ Before starting, ensure you have these tools installed:
 - Tailwind CSS CLI (Standalone)
 - Make (for development scripts)
 
-For installation instructions, visit our [documentation](https://goilerplate.com/docs/how-to-use#requirements).
+For installation instructions, visit our [documentation](https://templui.com/docs/how-to-use#requirements).
 
 ## Setup
 
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/axzilla/goilerplate-quickstart.git
-   cd goilerplate-quickstart
+   git clone https://github.com/axzilla/templui-quickstart.git
+   cd templui-quickstart
    ```
 
 2. **Install Dependencies**
@@ -38,7 +38,7 @@ For installation instructions, visit our [documentation](https://goilerplate.com
    ```
 
 3. **Configure Tailwind**
-   Since we're using Goilerplate as a package, you need to configure Tailwind to process its components:
+   Since we're using templUI as a package, you need to configure Tailwind to process its components:
 
    a. Get your Go path:
 
@@ -51,7 +51,7 @@ For installation instructions, visit our [documentation](https://goilerplate.com
    ```js
    content: [
      "./**/*.{html,templ,go}",
-     "${GOPATH}/pkg/mod/github.com/axzilla/goilerplate@*/**/*.{go,templ}", // Replace ${GOPATH} with your actual Go path
+     "${GOPATH}/pkg/mod/github.com/axzilla/templui@*/**/*.{go,templ}", // Replace ${GOPATH} with your actual Go path
    ];
    ```
 
@@ -65,13 +65,13 @@ For installation instructions, visit our [documentation](https://goilerplate.com
 
 ## Learn More
 
-- [Goilerplate Documentation](https://goilerplate.com/docs/how-to-use)
-- [Available Components](https://goilerplate.com/docs/components)
-- [Theme Customization](https://goilerplate.com/docs/themes)
+- [templUI Documentation](https://templui.com/docs/how-to-use)
+- [Available Components](https://templui.com/docs/components)
+- [Theme Customization](https://templui.com/docs/themes)
 
 ## Contributing
 
-Issues and pull requests are welcome! Please read our [contributing guidelines](https://github.com/axzilla/goilerplate/blob/main/CONTRIBUTING.md) before submitting a pull request.
+Issues and pull requests are welcome! Please read our [contributing guidelines](https://github.com/axzilla/templui/blob/main/CONTRIBUTING.md) before submitting a pull request.
 
 ## License
 

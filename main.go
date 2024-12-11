@@ -6,8 +6,8 @@ import (
 	"os"
 
 	"github.com/a-h/templ"
-	"github.com/axzilla/goilerplate-quickstart/assets"
-	"github.com/axzilla/goilerplate-quickstart/ui/pages"
+	"github.com/axzilla/templui-quickstart/assets"
+	"github.com/axzilla/templui-quickstart/ui/pages"
 	"github.com/joho/godotenv"
 )
 
