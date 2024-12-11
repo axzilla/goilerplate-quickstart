@@ -20,7 +20,7 @@ Before starting, ensure you have these tools installed:
 - Tailwind CSS CLI (Standalone)
 - Make (for development scripts)
 
-For installation instructions, visit our [documentation](https://templui.com/docs/how-to-use#requirements).
+For installation instructions, visit our [documentation](https://templui.io/docs/how-to-use#requirements).
 
 ## Setup
 
@@ -65,9 +65,9 @@ For installation instructions, visit our [documentation](https://templui.com/doc
 
 ## Learn More
 
-- [templUI Documentation](https://templui.com/docs/how-to-use)
-- [Available Components](https://templui.com/docs/components)
-- [Theme Customization](https://templui.com/docs/themes)
+- [templUI Documentation](https://templui.io/docs/how-to-use)
+- [Available Components](https://templui.io/docs/components)
+- [Theme Customization](https://templui.io/docs/themes)
 
 ## Contributing
 
