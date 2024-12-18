@@ -3,17 +3,50 @@ package pages
 import (
 	"github.com/axzilla/templui-quickstart/ui/layouts"
 	"github.com/axzilla/templui/pkg/components"
-	"github.com/axzilla/templui/pkg/icons"
 )
 
 templ Landing() {
 	@layouts.BaseLayout() {
-		<div class="flex gap-2 h-screen items-center justify-center">
-			@components.Button(components.ButtonProps{
-				IconLeft:   icons.Heart(icons.IconProps{}),
-				Text:       "Click Me!",
-				Attributes: templ.Attributes{"@click": "alert('Hey Dude!')"},
+		<div class="flex flex-col gap-8 h-screen items-center justify-center px-4">
+			<div class="text-center">
+				<h1 class="text-4xl font-bold mb-3">🚀 Welcome to TemplUI</h1>
+				<p class="text-muted-foreground text-lg max-w-lg">
+					Your quickstart template is ready! Here are some common questions to help you get started.
+				</p>
+			</div>
+			@components.Accordion(components.AccordionProps{
+				Items: []components.AccordionItem{
+					{
+						ID:      "structure",
+						Trigger: templ.Raw("Where should I add my components?"),
+						Content: templ.Raw("Check out the 'components' directory for your custom components. The 'pages' directory is for your page templates, and 'layouts' for your layout templates."),
+					},
+					{
+						ID:      "tailwind",
+						Trigger: templ.Raw("My Tailwind styles aren't updating?"),
+						Content: templ.Raw("Run 'make tailwind' separately or ensure 'make dev' is running correctly. Also verify your tailwind.config.js has the correct content paths including your GOPATH for TemplUI components."),
+					},
+					{
+						ID:      "new-page",
+						Trigger: templ.Raw("How do I add a new page?"),
+						Content: templ.Raw("Create a new .templ file in the 'pages' directory, use the BaseLayout component, and add your route in main.go. Check the existing pages for examples."),
+					},
+					{
+						ID:      "development",
+						Trigger: templ.Raw("Development server issues?"),
+						Content: templ.Raw("The 'make dev' command starts all necessary processes. If you see errors, try running the commands separately: 'make templ' for template generation, 'make server' for the Go server, and 'make tailwind' for CSS compilation."),
+					},
+					{
+						ID:      "production",
+						Trigger: templ.Raw("Ready to deploy?"),
+						Content: templ.Raw("Use the included Dockerfile to build your application: 'docker build -t myapp .' and then 'docker run -p 8090:8090 myapp'. The container includes all necessary build steps."),
+					},
+				},
+				Class: "w-full max-w-xl",
 			})
+			<div class="text-center text-sm text-muted-foreground">
+				<p>Need more help? Check out the <a href="https://templui.io" class="text-primary hover:underline">documentation</a> 📚</p>
+			</div>
 		</div>
 	}
 }

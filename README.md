@@ -1,13 +1,15 @@
-# templUI Quickstart
+# TemplUI Quickstart
 
-Get started with templUI, a modern UI component library for Go and Templ. This template provides a pre-configured setup for building web applications with templUI components.
+Get started with TemplUI, an enterprise-ready UI component library for Go and Templ. This template provides a pre-configured setup for building professional web applications with TemplUI components.
 
 ## Features
 
-- ✨ Pre-configured templUI components
-- 🎨 Ready-to-use theme and styling
+- ⚡️ Enterprise-ready components
+- 🛡️ CSP compliant by default
+- 🔄 HTMX optimized
+- 🧩 Component driven architecture
+- 🎨 Fully customizable design
 - 🚀 Development server with hot reload
-- 🛠️ Example components and layouts
 - 📱 Responsive by default
 - 🌙 Light and dark mode support
 
@@ -19,6 +21,7 @@ Before starting, ensure you have these tools installed:
 - Templ
 - Tailwind CSS CLI (Standalone)
 - Make (for development scripts)
+- Docker (optional, for deployment)
 
 For installation instructions, visit our [documentation](https://templui.io/docs/how-to-use#requirements).
 
@@ -38,7 +41,7 @@ For installation instructions, visit our [documentation](https://templui.io/docs
    ```
 
 3. **Configure Tailwind**
-   Since we're using templUI as a package, you need to configure Tailwind to process its components:
+   Since we're using TemplUI as a package, you need to configure Tailwind to process its components:
 
    a. Get your Go path:
 
@@ -55,17 +58,33 @@ For installation instructions, visit our [documentation](https://templui.io/docs
    ];
    ```
 
-4. **Start Development Server**
+## Development
 
-   ```bash
-   make dev
-   ```
+Start the development server with hot reload:
 
-   Your application will be running at [http://localhost:7331](http://localhost:7331)
+```bash
+make dev
+```
+
+Your application will be running at [http://localhost:7331](http://localhost:7331)
+
+## Deployment
+
+This template includes a production-ready Dockerfile for easy deployment:
+
+```bash
+# Build the image
+docker build -t templui-app .
+
+# Run the container
+docker run -p 8090:8090 templui-app
+```
+
+Your application will be available at `http://localhost:8090`
 
 ## Learn More
 
-- [templUI Documentation](https://templui.io/docs/how-to-use)
+- [TemplUI Documentation](https://templui.io/docs/how-to-use)
 - [Available Components](https://templui.io/docs/components)
 - [Theme Customization](https://templui.io/docs/themes)
 
