@@ -13,6 +13,21 @@ Get started with TemplUI, an enterprise-ready UI component library for Go and Te
 - 📱 Responsive by default
 - 🌙 Light and dark mode support
 
+## Security
+
+This template is CSP-compliant out of the box through TemplUI's built-in security features:
+
+- Uses Alpine.js CSP build
+- All components use nonces via templ
+- No inline scripts
+
+If you plan to add external scripts (like HTMX or highlight.js), you'll need to:
+
+1. Add the CSP middleware
+2. Configure allowed script sources
+
+See the [Documentation](https://templui.io/docs/how-to-use) for details.
+
 ## Prerequisites
 
 Before starting, ensure you have these tools installed:
