@@ -7,7 +7,7 @@ const config = {
     "./**/*.go",
     // Replace ${GOPATH} with your actual Go path
     // Get your Go path by running `go env GOPATH`
-    "${GOPATH}/pkg/mod/github.com/axzilla/goilerplate@*/**/*.{go,templ}",
+    "${GOPATH}/pkg/mod/github.com/axzilla/templui@*/**/*.{go,templ}",
   ],
   safelist: ["dark"],
   theme: {
